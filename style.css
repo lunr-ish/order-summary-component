@@ -1,3 +1,14 @@
+:root {
+  --clr-primary: 223, 47%, 23%;
+  --clr-secondary: 224, 23%, 55%;
+  --clr-accent: 245, 75%, 52%;
+  --clr-card-bg: 0 0% 100%;
+  --clr-bg: 225, 100%, 94%;
+  --clr-bg-200: 225, 100%, 98%;
+
+  --ff-redhat: "Red Hat Display", sans-serif;
+}
+
 *,
 *::before,
 *::after {
@@ -11,6 +22,7 @@
 body {
   width: 100%;
   min-height: 100vh;
+  font-family: var(--ff-redhat);
 }
 
 img {
