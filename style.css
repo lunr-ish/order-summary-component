@@ -23,6 +23,7 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: var(--ff-redhat);
+  font-weight: 500;
   padding: 1.5rem;
   background: hsl(var(--clr-bg));
   color: hsl(var(--clr-secondary));
@@ -45,4 +46,12 @@ img {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+.card {
+  background: hsl(var(--clr-card-bg));
+  max-width: 28.125rem;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1rem rgb(0, 0, 0, 0.1);
 }
