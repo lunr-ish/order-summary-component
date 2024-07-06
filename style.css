@@ -23,6 +23,13 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: var(--ff-redhat);
+  padding: 1.5rem;
+  background: hsl(var(--clr-bg));
+  color: hsl(var(--clr-secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 img {
