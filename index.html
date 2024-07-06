@@ -1,37 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Order summary card</title>
+  </head>
+  <body>
+    <main>
+      <article class="card" aria-labelledby="card-title">
+        <div class="card__img">
+          <img
+            src="./images/illustration-hero.svg"
+            alt="A girl wearing cyan and black clothes enjoying music with headphones connected to a mobile phone, city skyline in the background with a dark overlay"
+          />
+        </div>
 
-  Order Summary
+        <div class="card__content">
+          <h1 id="card-title" class="card__title">Order Summary</h1>
+          <p class="card__description">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+          <div class="plan">
+            <div class="img-wrapper">
+              <img src="./images/icon-music.svg" alt="" aria-hidden="true" />
+            </div>
+            <div>
+              <p class="plan__title">Annual Plan</p>
+              <p class="plan__price">$59.99/year</p>
+            </div>
+            <a href="#" class="plan__action-change"
+              >Change<span class="sr-only"> plan</span></a
+            >
+          </div>
 
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+          <a href="#" class="card__action-proceed">Proceed to Payment</a>
+          <a href="" class="card__action-cancel">Cancel Order</a>
+        </div>
+      </article>
+    </main>
+  </body>
 </html>
