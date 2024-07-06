@@ -58,6 +58,8 @@ img {
   display: block;
 }
 
+/* UTILITIES */
+
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -67,6 +69,31 @@ img {
   white-space: nowrap;
   width: 1px;
 }
+
+.btn {
+  display: block;
+  max-width: fit-content;
+  text-decoration: none;
+  color: inherit;
+  font-weight: var(--fw-bold);
+  margin-inline: auto;
+}
+
+.btn-primary {
+  max-width: 100%;
+  background: hsl(var(--clr-accent));
+  color: hsl(var(--clr-white));
+  padding: 1rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 1.5rem 1rem -0.5rem rgba(0, 0, 0, 0.2);
+  transition-duration: 200;
+}
+
+.btn-primary:is(:hover, :focus-visible) {
+  background: hsl(var(--clr-accent-light));
+}
+
+/* BASE */
 
 .card {
   background: hsl(var(--clr-card-bg));
