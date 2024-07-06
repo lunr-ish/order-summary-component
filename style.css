@@ -77,6 +77,7 @@ img {
   color: inherit;
   font-weight: var(--fw-bold);
   margin-inline: auto;
+  transition-duration: 200;
 }
 
 .btn-primary {
@@ -86,7 +87,6 @@ img {
   padding: 1rem;
   border-radius: 0.625rem;
   box-shadow: 0 1.5rem 1rem -0.5rem rgba(0, 0, 0, 0.2);
-  transition-duration: 200;
 }
 
 .btn-primary:is(:hover, :focus-visible) {
@@ -153,6 +153,10 @@ img {
 
 .card__action-proceed {
   margin-bottom: 1.5rem;
+}
+
+.card__action-cancel:is(:hover, :focus-visible) {
+  color: hsl(var(--clr-primary));
 }
 
 @media (min-width: 30rem) {
