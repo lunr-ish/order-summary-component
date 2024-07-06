@@ -2,11 +2,17 @@
   --clr-primary: 223, 47%, 23%;
   --clr-secondary: 224, 23%, 55%;
   --clr-accent: 245, 75%, 52%;
+  --clr-accent-light: 245, 75%, 67%;
   --clr-card-bg: 0 0% 100%;
   --clr-bg: 225, 100%, 94%;
   --clr-bg-200: 225, 100%, 98%;
+  --clr-white: 0, 0%, 100%;
 
   --ff-redhat: "Red Hat Display", sans-serif;
+
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-black: 900;
 }
 
 *,
