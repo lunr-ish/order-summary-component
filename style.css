@@ -103,8 +103,32 @@ img {
   box-shadow: 0 0.5rem 1rem rgb(0, 0, 0, 0.1);
 }
 
+.card__content {
+  padding: 2rem 1.5rem;
+}
+
+.card__title {
+  font-size: 1.375rem;
+  font-weight: var(--fw-black);
+  color: hsl(var(--clr-primary));
+}
+
+.card__description {
+  line-height: 1.65;
+  margin-top: 1rem;
+  padding-inline: 0.5rem;
+}
+
 @media (min-width: 30rem) {
   body::before {
     background-image: url("./images/pattern-background-desktop.svg");
+  }
+
+  .card__content {
+    padding: 2.875rem 3rem 3rem;
+  }
+
+  .card__title {
+    font-size: 1.75rem;
   }
 }
