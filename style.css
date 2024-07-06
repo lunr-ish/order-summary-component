@@ -119,6 +119,42 @@ img {
   padding-inline: 0.5rem;
 }
 
+.plan {
+  background: hsl(var(--clr-bg-200));
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: 0.875rem;
+  margin-block: 1.375rem 1.5rem;
+}
+
+.plan__details {
+  flex: 1;
+  text-align: left;
+}
+
+.plan__title {
+  font-weight: var(--fw-bold);
+  color: hsl(var(--clr-primary));
+  margin-bottom: 0.25rem;
+}
+
+.plan__action-change {
+  color: hsl(var(--clr-accent));
+  font-weight: var(--fw-bold);
+  transition-duration: 200;
+}
+
+.plan__action-change:is(:hover, :focus-visible) {
+  color: hsla(var(--clr-accent-light));
+}
+
+.card__action-proceed {
+  margin-bottom: 1.5rem;
+}
+
 @media (min-width: 30rem) {
   body::before {
     background-image: url("./images/pattern-background-desktop.svg");
@@ -130,5 +166,17 @@ img {
 
   .card__title {
     font-size: 1.75rem;
+  }
+
+  .plan {
+    padding: 1.5rem;
+  }
+
+  .plan__details {
+    font-size: 1rem;
+  }
+
+  .card__action-proceed {
+    margin-bottom: 2rem;
   }
 }
